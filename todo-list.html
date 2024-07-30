@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="top">
+      <p class="title">My To-Do List</p>
+      <p class="complete-title">Completed Tasks</p>
+      <button class="completed-task-button js-completed-task-button" onclick="showCompletedTask()">Completed Tasks</button>
+    </div>
+
+    <div class="card">
+      <div class="todo-input-grid">
+        <input placeholder="Todo name" class="js-name-input name-input">
+        <input type="date" class="js-due-date-input due-date-input">
+        <button class="add-todo-button js-add-todo-button">Add</button>
+        <button class="clear-all-button js-clear-all-button" onclick="clearAll()">Clear All Tasks</button>
+      </div>
+      
+      <div class="js-todo-list todo-grid">text</div>
+      
+      <div class="js-clear-completed-button">
+        <button class="clear-completed-button " onclick="clearCompleted()">Clear</button>
+      </div>
+      <div class="js-completed-todo-list complete-todo-grid"></div>
+    </div>
+    
+    <script src ="scripts.js"></script>
+  </body>
+</html>
